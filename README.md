@@ -1,10 +1,10 @@
-# 🎵 Reproductor de Audio - Patrón de Diseño State
+#  Reproductor de Audio - Patrón de Diseño State
 
 Este proyecto implementa la simulación de un **Reproductor de Audio** utilizando el patrón de diseño **State (Estado)** en TypeScript. El objetivo principal es demostrar cómo gestionar comportamientos dinámicos basados en el estado interno del objeto, eliminando por completo el uso de estructuras condicionales complejas (`if`/`switch`) en la clase principal.
 
 ---
 
-## 📐 Arquitectura del Patrón State
+##  Arquitectura del Patrón State
 
 El proyecto se divide siguiendo estrictamente la estructura del patrón GoF (Gang of Four):
 
@@ -16,14 +16,14 @@ El proyecto se divide siguiendo estrictamente la estructura del patrón GoF (Gan
 
 ---
 
-## 🛠️ Principios SOLID Aplicados
+##  Principios SOLID Aplicados
 
 * **Principio de Responsabilidad Única (SRP):** Cada estado concreto encapsula única y exclusivamente la lógica de negocio que le corresponde a su situación. El bloqueo de pantalla no se mezcla con la reproducción.
 * **Principio de Abierto/Cerrado (OCP):** El sistema está **cerrado a la modificación** en su núcleo (`ReproductorAudio`), el cual no cambia si se agregan nuevas funciones. Sin embargo, está **abierto a la extensión**, permitiendo añadir nuevos botones (como `clickAnterior()`) extendiendo la lógica dentro de los estados individuales.
 
 ---
 
-## 📁 Estructura de Archivos
+##  Estructura de Archivos
 
 ```text
 reproductor-state/
